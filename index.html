@@ -1,7 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>luticm | Notes and Sessions</title>
+	<style>
+		:root {
+			--bg-top: #0b1d2a;
+			--bg-mid: #123447;
+			--bg-bottom: #f4efe4;
+			--text-dark: #1e2933;
+			--text-light: #f5f1e8;
+			--card-bg: rgba(255, 255, 255, 0.88);
+			--card-border: rgba(9, 33, 46, 0.15);
+			--accent: #c15c2d;
+			--accent-2: #0f5f73;
+			--shadow: 0 18px 42px rgba(10, 24, 33, 0.2);
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			min-height: 100vh;
+			font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+			color: var(--text-dark);
+			background:
+				radial-gradient(circle at 8% 12%, rgba(255, 194, 138, 0.2), transparent 36%),
+				radial-gradient(circle at 88% 16%, rgba(143, 206, 227, 0.22), transparent 34%),
+				linear-gradient(175deg, var(--bg-top) 0%, var(--bg-mid) 36%, var(--bg-bottom) 100%);
+			display: grid;
+			place-items: center;
+			padding: 2rem 1rem;
+		}
+
+		.shell {
+			width: min(940px, 100%);
+			background: var(--card-bg);
+			border: 1px solid var(--card-border);
+			border-radius: 20px;
+			box-shadow: var(--shadow);
+			backdrop-filter: blur(4px);
+			overflow: hidden;
+		}
+
+		.hero {
+			padding: 2.5rem 2rem 1.2rem;
+			color: var(--text-dark);
+			border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+			animation: rise 0.7s ease-out both;
+		}
+
+		.hero h1 {
+			margin: 0;
+			font-size: clamp(2rem, 4.6vw, 3.4rem);
+			letter-spacing: 0.01em;
+			font-family: "Cambria", "Times New Roman", serif;
+		}
+
+		.hero p {
+			margin: 0.9rem 0 0;
+			max-width: 64ch;
+			line-height: 1.6;
+			color: #324754;
+			font-size: 1.03rem;
+		}
+
+		.grid {
+			padding: 1.4rem;
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 1rem;
+		}
+
+		.card {
+			background: rgba(255, 255, 255, 0.78);
+			border: 1px solid rgba(0, 0, 0, 0.08);
+			border-radius: 14px;
+			padding: 1rem;
+			transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+			animation: rise 0.7s ease-out both;
+		}
+
+		.card:nth-child(2) {
+			animation-delay: 0.08s;
+		}
+
+		.card:nth-child(3) {
+			animation-delay: 0.16s;
+		}
+
+		.card:hover {
+			transform: translateY(-4px);
+			border-color: rgba(0, 0, 0, 0.16);
+			box-shadow: 0 10px 24px rgba(8, 31, 43, 0.14);
+		}
+
+		.card h2 {
+			margin: 0;
+			font-size: 1.22rem;
+			font-family: "Cambria", "Times New Roman", serif;
+		}
+
+		.card p {
+			margin: 0.65rem 0 1rem;
+			line-height: 1.55;
+			color: #3a4f5d;
+			font-size: 0.98rem;
+		}
+
+		.card a {
+			color: var(--accent-2);
+			font-weight: 700;
+			text-decoration-thickness: 2px;
+			text-underline-offset: 3px;
+		}
+
+		.card a:hover {
+			color: var(--accent);
+		}
+
+		.foot {
+			padding: 1rem 1.4rem 1.3rem;
+			border-top: 1px solid rgba(0, 0, 0, 0.08);
+			color: #38505e;
+			font-size: 0.93rem;
+		}
+
+		@keyframes rise {
+			from {
+				opacity: 0;
+				transform: translateY(10px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@media (max-width: 840px) {
+			.grid {
+				grid-template-columns: 1fr;
+			}
+
+			.hero {
+				padding: 2rem 1.2rem 1rem;
+			}
+
+			.hero p {
+				font-size: 1rem;
+			}
+		}
+	</style>
+</head>
 <body>
-<h1>luticm Page</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<main class="shell">
+		<header class="hero">
+			<h1>luticm.github.io</h1>
+			<p>
+				Personal notes on architecture, conference sessions, and technical learnings.
+				This page is a simple landing area that points to the markdown content in this repository.
+			</p>
+		</header>
+
+		<section class="grid" aria-label="Site navigation">
+			<article class="card">
+				<h2>About</h2>
+				<p>Quick profile, background, and links.</p>
+				<a href="about.md">Open about page</a>
+			</article>
+
+			<article class="card">
+				<h2>Sessions</h2>
+				<p>Conference notes, including Build 2026 highlights.</p>
+				<a href="sessions/README.md">Browse sessions</a>
+			</article>
+
+			<article class="card">
+				<h2>Posts</h2>
+				<p>Date-based posts in YYYY-MM-DD-title.md format.</p>
+				<a href="posts/README.md">Read posts</a>
+			</article>
+		</section>
+
+		<footer class="foot">
+			Managed with GitHub Pages. This landing page works as plain HTML and does not require Jekyll setup.
+		</footer>
+	</main>
 </body>
 </html>

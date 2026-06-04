@@ -1,0 +1,3 @@
+# Ignore post files until real content is ready
+posts/*
+.vscode/
