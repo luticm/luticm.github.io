@@ -1,0 +1,6 @@
+title: luticm.github.io
+description: Personal notes on architecture, sessions, and technical learnings
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed

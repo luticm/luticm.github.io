@@ -1,3 +1,9 @@
+---
+layout: page
+title: Build 2026
+permalink: /sessions/build2026/
+---
+
 # Build 2026
 
 ## Sessions
