@@ -1,6 +1,11 @@
 # Ignore post files until real content is ready
 posts/*
+!posts/README.md
 !posts/PT-BR/
 posts/PT-BR/*
-!posts/PT-BR/2026-06-10-DP300.md
+!posts/PT-BR/2026-06-08-DP300.md
+!posts/PT-BR/README.md
+!posts/EN-US/
+posts/EN-US/*
+!posts/EN-US/README.md
 .vscode/
