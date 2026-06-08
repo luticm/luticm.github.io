@@ -1,3 +1,6 @@
 # Ignore post files until real content is ready
 posts/*
+!posts/PT-BR/
+posts/PT-BR/*
+!posts/PT-BR/2026-06-10-DP300.md
 .vscode/
