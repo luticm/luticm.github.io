@@ -4,9 +4,7 @@ title: Build 2026
 permalink: /sessions/build2026/
 ---
 
-# Build 2026
-
-## Sessions
+## AI sessions
 
 ### BRK246: Foundry IQ - Fuel agents with enterprise knowledge and agentic retrieval
 **Speaker:** Pablo Castro  
@@ -14,5 +12,5 @@ permalink: /sessions/build2026/
 
 I'm a big fan of Pablo Castro and always watch his sessions. This one provides excellent insights into what Foundry IQ is doing in terms of knowledge base architecture, integrating different sources into Foundry, agentic retrieval patterns, the 4 Microsoft IQs and the automation capabilities Microsoft is building to simplify development of agentic workloads.
 
-Good read companion: https://aka.ms/FoundryIQ-evals
+Good read companion (https://aka.ms/FoundryIQ-evals)
 

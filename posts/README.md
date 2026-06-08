@@ -4,11 +4,7 @@ title: Posts
 permalink: /posts/
 ---
 
-# Posts
-
-Choose a language:
-
-## Portuguese
+## Portuguese (Brazil)
 
 - [Posts em Portugues](/posts/pt-br/)
 
