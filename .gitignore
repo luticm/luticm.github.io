@@ -8,4 +8,5 @@ posts/PT-BR/*
 !posts/EN-US/
 posts/EN-US/*
 !posts/EN-US/README.md
+!posts/EN-US/2026-06-08-DP300.md
 .vscode/
