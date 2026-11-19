@@ -3,10 +3,25 @@ posts/*
 !posts/README.md
 !posts/PT-BR/
 posts/PT-BR/*
-!posts/PT-BR/2026-06-08-DP300.md
+!posts/PT-BR/PT_20260608_DP300.md
 !posts/PT-BR/README.md
 !posts/EN-US/
 posts/EN-US/*
 !posts/EN-US/README.md
-!posts/EN-US/2026-06-08-DP300.md
+!posts/EN-US/EN_20260608_DP300.md
+!posts/EN-US/EN_20261009_DP800.md
 .vscode/
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.bundle/
+/_design-preview/
+/_local/
+
+# Local control files and scripts must not enter the public repository.
+/README.md
+/TASKS.md
+/ARTICLE_IDEAS.md
+/LOCAL_PREVIEW.md
+*.ps1

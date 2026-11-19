@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {% feed_meta %}
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Luciano Moreira <span class="brand-nickname">[Luti]</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="{{ '/posts/en-us/' | relative_url }}"{% if page.url contains '/posts/en-us/' %} aria-current="true"{% endif %}>Posts (EN)</a>
+        <a href="{{ '/posts/pt-br/' | relative_url }}"{% if page.url contains '/posts/pt-br/' %} aria-current="true"{% endif %}>Posts (PT)</a>
+        <a href="{{ '/sessions/' | relative_url }}"{% if page.url contains '/sessions/' %} aria-current="true"{% endif %}>Sessions</a>
+        <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>Luciano Moreira [Luti]</span>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

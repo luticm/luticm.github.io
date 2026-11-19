@@ -1,6 +1,18 @@
 title: luticm.github.io
+url: https://luticm.github.io
+baseurl: ""
 description: Personal notes on architecture, sessions, and technical learnings
 theme: minima
 markdown: kramdown
 plugins:
   - jekyll-feed
+exclude:
+  - _local
+  - _design-preview
+  - README.md
+  - preview.ps1
+  - TASKS.md
+  - ARTICLE_IDEAS.md
+  - LOCAL_PREVIEW.md
+  - posts/EN-US/EN_YYYYMMDD_TEMPLATE.md
+  - posts/PT-BR/PT_YYYYMMDD_TEMPLATE.md

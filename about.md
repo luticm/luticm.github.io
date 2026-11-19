@@ -1,13 +1,9 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-# About Me
+<a href="{{ '/about/pt-br/' | relative_url }}" lang="pt-BR" hreflang="pt-BR">Leia em português</a>
 
-<!-- Write about yourself here -->
-
-**Connect with me:**  
-[LinkedIn](https://www.linkedin.com/in/luticm/)
-
+Under construction. More about me coming soon.
