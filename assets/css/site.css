@@ -56,12 +56,13 @@ p { color: var(--muted); }
 .button { display: inline-block; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 700; padding: 9px 16px; border-radius: 8px; }
 .button:hover { color: var(--on-accent); background: var(--accent-hover); }
 .meta { font-size: .8rem; color: var(--muted); }
-.article-shell { width: min(900px, calc(100% - 48px)); margin: 48px auto 64px; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 52px 72px; }
+.article-shell { width: min(1000px, calc(100% - 48px)); margin: 48px auto 64px; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 52px 72px; }
 .article-header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 32px; }
 .article-shell h1 { font-size: clamp(2rem, 4vw, 3rem); overflow-wrap: anywhere; }
 .article-shell h2 { margin-top: 40px; }
 .page-body { overflow-wrap: anywhere; }
 .page-body p, .page-body li { line-height: 1.85; font-size: 1.05rem; }
+.post-body > p:not(:first-child) { text-align: justify; text-indent: 2em; }
 .page-body li + li { margin-top: 8px; }
 .page-body img { max-width: 100%; height: auto; }
 blockquote { padding: 8px 24px; margin: 28px 0; border-left: 3px solid var(--accent); background: var(--raised); border-radius: 0 10px 10px 0; }

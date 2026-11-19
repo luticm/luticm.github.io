@@ -5,7 +5,7 @@ layout: default
   <header class="article-header">
     <h1>{{ page.title | escape }}</h1>
   </header>
-  <div class="page-body">
+  <div class="page-body{% if page.url contains '/posts/' %} post-body{% endif %}">
     {{ content }}
   </div>
   <nav class="page-navigation" aria-label="Page navigation">
